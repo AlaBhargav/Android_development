@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Welcome to my apps"
+        android:fontFamily="serif"
+        android:background="#000"
+        android:gravity="center"
+        android:textColor="#E1E1E1"
+        android:layout_marginBottom="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="#2196F3">
+   <Button
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="Google"
+       android:textSize="15sp"
+       android:backgroundTint="#FF5722"
+       android:layout_gravity="center"
+       android:onClick="googlepage"
+       android:layout_weight=".25"
+       android:layout_marginBottom="5dp"
+
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF9800"
+        android:layout_weight=".25"
+        android:onClick="dailpage"
+        android:layout_marginBottom="5dp"
+
+        android:text="dailpage" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9C27B0"
+        android:layout_width="wrap_content"
+        android:text="campage"
+        android:layout_gravity="center"
+        android:onClick="campage"
+        android:layout_weight=".25"/>
+
+    </LinearLayout>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        />
+
+
+</LinearLayout>
